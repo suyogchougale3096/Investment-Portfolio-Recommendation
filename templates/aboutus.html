@@ -1,0 +1,55 @@
+<!-- About Us -->
+<div
+  id="aboutus"
+  class="container-fluid bg-dark text-light pt-5 pb-5"
+  style="display: none"
+>
+  <p class="fs-2 text-center">About Us</p>
+  <div class="container">
+    <div class="row pt-sm-5 mb-4">
+      <div class="col-md-6 text-light">
+        <img src="/static/images/stock.jpg" class="card-img-top" alt="..." />
+      </div>
+      <div class="col-md-6 border d-flex align-items-center">
+        <div>
+          <p class="text-center fs-3">Save time and effort</p>
+          <br />
+          <p class="text-center fs-6">{{image1}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-sm-5 mb-4">
+      <div class="col-md-6 text-light">
+        <img src="/static/images/3.jpg" class="card-img-top" alt="..." />
+      </div>
+      <div class="col-md-6 border d-flex align-items-center">
+        <div>
+          <p class="text-center fs-3">Build a diversified portfolio</p>
+          <br />
+          <p class="text-center fs-6">{{image2}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-sm-5 mb-4">
+      <div class="col-md-6 text-light">
+        <img src="/static/images/4.jpg" class="card-img-top" alt="..." />
+      </div>
+      <div class="col-md-6 border d-flex align-items-center">
+        <div>
+          <p class="text-center fs-3">Save time and effort</p>
+          <br />
+          <p class="text-center fs-6">{{image3}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End About Us -->
+
+<script>
+  $(document).ready(function () {
+    $("#aboutus").fadeIn(3000); // Adjust the duration (in milliseconds) as needed
+  });
+</script>

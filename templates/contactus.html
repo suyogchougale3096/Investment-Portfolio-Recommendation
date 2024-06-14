@@ -1,0 +1,52 @@
+<!-- Contact Page starts -->
+<div id="contact" class="container pt-5 pb-5" style="opacity: 0">
+  <div class="row">
+    <div class="col">
+      <p class="text-light fs-2 text-dark">Contact Us</p>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Full Name</label>
+          <input type="name" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input type="email" class="form-control" />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea2"
+            style="height: 100px"
+          ></textarea>
+          <label for="floatingTextarea2">Comments</label>
+        </div>
+        <br />
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Contact page ends -->
+
+<script>
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      var scrollDistance = $(window).scrollTop();
+      var contactOffset = $("#contact").offset().top;
+
+      if (scrollDistance > contactOffset - 500) {
+        // Adjust the offset as needed
+        $("#contact").animate({ opacity: 1 }, 1000); // Adjust the duration as needed
+      }
+    });
+  });
+</script>

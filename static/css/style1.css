@@ -1,0 +1,44 @@
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  background-color: gray;
+  color: white;
+  border-radius: 10px;
+}
+
+.container {
+  padding-top: 3%;
+}
+.inner {
+  overflow: hidden;
+}
+.inner img {
+  transition: all 1.5s ease;
+}
+.inner:hover img {
+  transform: scale(1.25);
+}
+#editStrategyButton,#nextButton {
+  background-color: darkcyan;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  }
+
+/* .container {
+  padding-top: 3%;
+}
+.inner {
+  overflow: hidden;
+}
+.inner img {
+  transition: all 1.5s ease;
+}
+.inner:hover img {
+  transform: scale(1.25);
+} */
